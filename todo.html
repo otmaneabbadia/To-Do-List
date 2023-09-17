@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TO DO LIST</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-success">
+    <section style="width: 100%; height: 80vh">
+      <main class="container-md" style="height: 100%">
+        <div class="d-flex gap-2 justify-content-center mt-5">
+          <h1>To-Do List</h1>
+          <img src="checklist.png" style="height: 40px; width: auto" />
+        </div>
+        <div
+          class="shadow bg-success bg-opacity-25 rounded bg-light mt-5 me-auto ms-auto"
+          style="height: auto; width: 60%"
+        >
+          <div class="d-flex pb-5 gap-2 p-5">
+            <input type="text" class="form-control" placeholder="Add item..." />
+            <button type="button" class="btn btn-success" id="addButton">
+              ADD
+            </button>
+          </div>
+
+          <span class="row mx-0 mt-4" id="tasks">
+            <!--<div
+              class="d-flex justify-content-between align-items-center bg-secondary bg-opacity-50 rounded item"
+            >
+              <h6 class="p-3">Task1</h6>
+              <button type="button" class="btn bg-dark text-light">
+                Delete
+              </button>
+            </div>
+            -->
+          </span>
+        </div>
+      </main>
+    </section>
+
+    <script src="todo.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
